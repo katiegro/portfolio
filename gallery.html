@@ -1,5 +1,4 @@
-<!-- https://katiegro.github.io/WDD/wwr/index.html-->
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles/styles.css">
@@ -9,7 +8,7 @@
     <title>Shutter Studios| Home</title>
 </head>
 <body>
-    <div id="gal-content">
+    <div id="faq-content">
     
     <header>
         <a id="logo_link" href="index.html">
@@ -18,62 +17,137 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="site-plan.html">Site Plan</a>
-            <a href="gallery.html">Image Gallery</a>
-            <a href="faq.html">FAQ</a>  
+            <a href="faq.html">FAQ</a>
+            <a href="test.html">Image Gallery</a>  
         </nav>
     </header>
 
 
+</style>
+<body>
 
-    <div id="grid-1">
-        <img id="image1" src="images/james2.jpeg" alt="james">
-        <img id="image1" src="images/IMG-0959.jpg" alt="leo and ash">
-        <img id="image1" src="images/loganrocks2.JPG" alt="logan rocks">
-    </div>
+<h2 style="text-align:center">Slideshow Gallery</h2>
 
-    <div id="grid-2">
-        <img id="image2" src="images/70FBC12A-FACD-4FA6-9852-121B44C9573E.jpg" alt="colorado sunset"> 
-        <h3>
-            Views Like These
-          </h3>
-          <p>
-            Photography isnt just capturing portraiats or family photos.<p>
-                It has allowed me as a creator to travel and see different parts of the world<p>
-                I love being able to go into nature and capture the wildlife and plants.<p>
-                    The location thats chosen has a lot to do with the outcome of the photos<p>
-                    </p>
-                </p>
-                </p>
-            </p>
-          </p>
-    </div>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/james2.jpeg" style="width:100%">
+  </div>
 
-    <div id="grid-3">
-        <img id="image3" src="images/IMG-0960.jpg" alt="tori rodeo">
-        <img id="image3" src="images/rocks3.JPG" alt="lvrocls">
-        <img id="image3" src="images/bwje.jpg" alt="ellie and james">
-        <img id="image3" src="images/rocks1.JPG" alt="me w rocks lV">
-    </div>
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/IMG-0959.jpg" style="width:100%">
+  </div>
 
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/loganrocks2.JPG" style="width:100%">
+  </div>
     
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/IMG-0960.jpg" style="width:100%">
+  </div>
 
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/rocks3.JPG" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/70FBC12A-FACD-4FA6-9852-121B44C9573E.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
 
-    <footer>
-        <p>RushRunners &copy; 2023 - Katie Grossnickle </p>
-        <p><a href="site-plan.html">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
-        <div class="social">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter-sign.png" alt="twitter icon">
-            </a>
-            <a href="https://www.instagram.com/katie.grossnickle/">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
-        </div>
-    </footer>
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/james2.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Color Portraits">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/IMG-0959.jpg" style="width:100%" onclick="currentSlide(2)" alt="Couples">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/loganrocks2.JPG" style="width:100%" onclick="currentSlide(3)" alt="Landscape Portraits">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/IMG-0960.jpg" style="width:100%" onclick="currentSlide(4)" alt="Senior Pictures">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/rocks3.JPG" style="width:100%" onclick="currentSlide(5)" alt="Color">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/70FBC12A-FACD-4FA6-9852-121B44C9573E.jpg" style="width:100%" onclick="currentSlide(6)" alt="National Parks">
+    </div>
+  </div>
 </div>
+<div>
+    <h3>
+        Views Like These
+    </h3>
+    <p>
+    Photography isnt just capturing portraiats or family photos.<p>
+        It has allowed me as a creator to travel and see different parts of the world<p>
+        I love being able to go into nature and capture the wildlife and plants.<p>
+            The location thats chosen has a lot to do with the outcome of the photos.<p>
+            </p>
+        </p>
+        </p>
+    </p>
+    </p>
+</div>
+<footer>
+    <p>Shutter Studios &copy; 2023 - Katie Grossnickle </p>
+    <p><a href="site-plan.html">Site Plan</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com">
+            <img src="images/facebook-line-icon.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/twitter-line-icon.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/black-instagram-icon.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
 </body>
 </html>
